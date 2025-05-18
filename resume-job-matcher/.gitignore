@@ -2,6 +2,5 @@ __pycache__/
 .vscode/
 .ipynb_checkpoints/
 *.pdf
-*.pkl
 .env
 venv/
