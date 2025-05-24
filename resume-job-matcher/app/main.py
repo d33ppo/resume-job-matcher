@@ -20,6 +20,7 @@ demo = gr.Interface(
     inputs=gr.File(label="Upload Resume (PDF)"),
     outputs=gr.Markdown(label="Top Matching Jobs"),
     title="Resume Job Matcher"
+    allow_flagging="never"
 )
 
 if __name__ == "__main__":
