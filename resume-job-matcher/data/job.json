@@ -1,0 +1,54 @@
+{
+  "jobs": [
+    {
+      "job_id": "1",
+      "title": "Internship for Project Management",
+      "company": "Extol Corporation Sdn Bhd",
+      "location": "1-40-1, Menara Bangkok bank, berjaya central park, no 105 jalan ampang, 50450 kuala lumpur",
+      "type": "Internship",
+      "posted_date": "2025-05-19 03:09:00",
+      "deadline": "2025-08-19",
+      "description": [
+	"Analysis & project management documentation",
+	"Quality testing and project coordination",
+	"Ensure meeting the deadlines and timely tasks of all project deliverables",
+	"Play an active role in effective problem-solving and good decision-making in delivery of project outcomes"
+      ],
+      "requirements": [
+        "Minimum 3 months traineeship period and final year student is preferred.",
+        "Strong passion with minimum relevant technical skills in the respective positions above",
+        "Strong analytic and problem solving skills",
+        "Discipline, independent and show initiative",
+	"Good Interpersonal skills with colleagues and supervisors"
+      ],
+      "phone": "03-2181 3666",
+      "url": "https://www.extolcorp.com/"
+    },
+    {
+      "job_id": "2",
+      "title": "internship for programmer",
+      "company": "Extol Corporation Sdn Bhd",
+      "location": "1-40-1, Menara Bangkok bank, berjaya central park, no 105 jalan ampang, 50450 kuala lumpur",
+      "type": "Internship",
+      "posted_date": "2025-05-19 03:02:08",
+      "deadline": "2025-08-19",
+      "description": [
+	"Assist in developing and maintaining mobile applications for [iOS/Android/both] platforms.",
+	"Write clean, maintainable, and efficient code following best practices.",
+	"Collaborate with cross-functional teams, including designers, developers, and product managers, to implement new features.",
+	"Test applications for usability, performance, and reliability, and troubleshoot bugs.",
+	"Stay updated with the latest trends and technologies in mobile development.",
+	"Contribute to technical documentation and project planning."
+      ],
+      "requirements": [
+        "Minimum 3 months traineeship period and final year student is preferred.",
+        "Strong passion with minimum relevant technical skills in the respective positions above",
+        "Strong analytic and problem solving skills",
+	"Discipline, independent and show initiative",
+	"Good Interpersonal skills with colleagues and supervisors"
+      ],
+      "phone": "03-2181 3666",
+      "url": "https://www.extolcorp.com/"
+    }
+  ]
+}
