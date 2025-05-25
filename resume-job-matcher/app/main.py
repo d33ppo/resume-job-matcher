@@ -4,11 +4,13 @@ from app.resume_parser import extract_text_from_pdf
 from app.matcher import JobMatcher
 from app.utils import clean_text, highlight_matches, highlight_resume_text
 
-matcher = JobMatcher("data/job.json")
+matcher = JobMatcher("data/job.json", use_bert=True)
 
-def process_resume(file):
+def process_resume(file, method):
     text = extract_text_from_pdf(file.name)
     cleaned = clean_text(text)
+
+    matcher.use_bert = (method == "Semantic (BERT)")
 
     # Match top jobs using cleaned resume
     matched_jobs = matcher.match(cleaned)
@@ -16,15 +18,14 @@ def process_resume(file):
     # Combine all descriptions + requirements from top jobs
     job_tokens = set()
     for _, row in matched_jobs.iterrows():
-        job_text = ' '.join(row['description']) + ' ' + ' '.join(row['requirements'])
-        tokens = matcher.vectorizer.build_tokenizer()(job_text.lower())
-        job_tokens.update(tokens)
+        job_text = ' '.join(row['description'] + row['requirements'])
+        job_tokens.update(clean_text(job_text).split())
 
     # Highlight words in the resume that appear in job descriptions
     highlighted_resume = highlight_resume_text(text, job_tokens)
 
     # Tokenize resume for highlighting job descriptions
-    resume_tokens = set(matcher.vectorizer.build_tokenizer()(cleaned.lower()))
+    resume_tokens = set(cleaned.split())
 
     # Build job display
     result = ""
@@ -54,12 +55,15 @@ def process_resume(file):
 
 demo = gr.Interface(
     fn=process_resume,
-    inputs=gr.File(label="Upload Resume (PDF)"),
+    inputs=[
+        gr.File(label="Upload Resume (PDF)"),
+        gr.Radio(["TF-IDF (Basic)", "Semantic (BERT)"], label="Matching Method", value="TF-IDF (Basic)")
+    ],
     outputs=[
         gr.HTML(label="Top Matching Jobs"),
         gr.HTML(label="Highlighted Resume")
     ],
-    title="Resume Job Matcher",
+    title="Resume-Internship Matcher",
     allow_flagging="never"
 )
 

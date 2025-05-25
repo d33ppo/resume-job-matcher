@@ -1,10 +1,15 @@
 # app/utils.py
 import re
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 def clean_text(text):
+    text = text.lower()
+    text = re.sub(r'\d+', '', text)
     text = re.sub(r'\s+', ' ', text)
-    return text.strip()
-
+    text = re.sub(r'[^\w\s]', '', text)
+    tokens = text.split()
+    tokens = [t for t in tokens if t not in ENGLISH_STOP_WORDS and len(t) > 1]
+    return ' '.join(tokens)
 
 def highlight_matches(text, resume_tokens):
     """
