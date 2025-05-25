@@ -4,7 +4,7 @@ import pandas as pd
 import json
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import joblib
+
 
 class JobMatcher:
     def __init__(self, job_json_path):
@@ -40,3 +40,4 @@ class JobMatcher:
 
         # Return top job details
         return self.df.iloc[top_indices][['title', 'company', 'location', 'type', 'deadline', 'description', 'requirements', 'phone', 'url']]
+    
