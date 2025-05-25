@@ -28,9 +28,6 @@ class JobMatcher:
         self.vectorizer = TfidfVectorizer(stop_words='english')
         self.job_matrix = self.vectorizer.fit_transform(self.df['full_text'])
 
-        # Save the vectorizer model for reuse
-        joblib.dump(self.vectorizer, 'models/tfidf_vectorizer.pkl')
-
     def match(self, resume_text, top_k=5):
         # Transform the resume into a vector
         resume_vec = self.vectorizer.transform([resume_text])
@@ -42,4 +39,4 @@ class JobMatcher:
         top_indices = scores.argsort()[-top_k:][::-1]
 
         # Return top job details
-        return self.df.iloc[top_indices][['title', 'company', 'description_text', 'requirement_text', 'url']]
+        return self.df.iloc[top_indices][['title', 'company', 'location', 'type', 'deadline', 'description', 'requirements', 'phone', 'url']]
