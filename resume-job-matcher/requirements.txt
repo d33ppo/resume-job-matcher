@@ -4,3 +4,4 @@ scikit-learn
 PyMuPDF
 joblib
 sentence-transformers
+spacy
