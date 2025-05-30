@@ -57,25 +57,35 @@ def process_resume(file, method, alpha):
     return result, f"<h1>📄 Highlighted Resume</h1><div style='white-space: pre-wrap;'>{highlighted_resume}</div>"
 
 # Gradio UI
-demo = gr.Interface(
-    fn=process_resume,
-    inputs=[
-        gr.File(label="📄 Upload Resume (PDF)"),
-        gr.Radio(
-            ["TF-IDF (Basic)", "Semantic (BERT)", "Hybrid (TF-IDF + BERT)"],
-            label="Matching Method",
-            value="Hybrid (TF-IDF + BERT)"
-        ),
-        gr.Slider(0.0, 1.0, value=0.5, step=0.1, label="TF-IDF vs BERT Weight (0=BERT, 1=TF-IDF)")
-    ],
-    outputs=[
-        gr.HTML(label="🔍 Top Matching Jobs"),
-        gr.HTML(label="🧠 Highlighted Resume")
-    ],
-    title="🎯 Resume-Internship Matcher",
-    description="Upload your resume to find the best-matching internships based on TF-IDF and semantic similarity (BERT).",
-    allow_flagging="never"
-)
+with gr.Blocks() as demo:
+    gr.Markdown("# 🎯 Text Similarity for Resume Job Matcher (UM Student Internship)")
+    gr.Markdown("Upload your resume to find the best-matching internships based on TF-IDF and semantic similarity (BERT).")
+    with gr.Row():
+        with gr.Column(scale=1):
+            resume_file = gr.File(label="📄 Upload Resume (PDF)")
+            method = gr.Radio(
+                ["TF-IDF (Basic)", "Semantic (BERT)", "Hybrid (TF-IDF + BERT)"],
+                label="Matching Method",
+                value="Hybrid (TF-IDF + BERT)"
+            )
+            alpha = gr.Slider(0.0, 1.0, value=0.5, step=0.1, label="TF-IDF vs BERT Weight (0=BERT, 1=TF-IDF)")
+            with gr.Row():
+                clear_btn = gr.ClearButton()
+                submit_btn = gr.Button("Submit")
+            highlighted_resume = gr.HTML(label="🧠 Highlighted Resume")
+        with gr.Column(scale=2):
+            job_matches = gr.HTML(label="🔍 Top Matching Jobs")
+
+    def wrapped_process_resume(file, method, alpha):
+        result, highlighted = process_resume(file, method, alpha)
+        return highlighted, result
+
+    submit_btn.click(
+        wrapped_process_resume,
+        inputs=[resume_file, method, alpha],
+        outputs=[highlighted_resume, job_matches]
+    )
+    clear_btn.add([resume_file, method, alpha, highlighted_resume, job_matches])
 
 if __name__ == "__main__":
     demo.launch(theme="default")
