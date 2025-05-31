@@ -49,6 +49,329 @@
       ],
       "phone": "03-2181 3666",
       "url": "https://www.extolcorp.com/"
-    }
+    },
+    {
+      "job_id": "3",
+      "title": "AI/Data Science Internship to Permanent",
+      "company": "BioQuest Advisory Sdn Bhd",
+      "location": "Kuala Lumpur",
+      "type": "Internship",
+      "posted_date": "2025-04-22 02:19:13",
+      "deadline": "2025-07-31",
+      "description": [
+        "This AI/Data Science internship is designed for final year student aiming to carve a niche in artificial intelligence and data science within the consulting industry, offering a unique chance to work as assistants to senior consultants on cutting-edge AI/Data Science projects.",
+        "The role is crafted to provide an immersive learning experience, exposing interns to the practical applications of AI and Data Science in solving complex business problems for a diverse range of clients.",
+        "Interns will assist in the entire lifecycle of AI/Data Science projects, from understanding client needs to deploying AI/Data Science solutions, under the guidance and mentorship of experienced AI and Data Science professionals.",
+        "This supportive environment aims to nurture the next generation of AI/Data Science consultants by equipping them with critical skills and insights into AI's strategic implementation in business contexts.",
+        "Support in Client Engagements: Assist senior consultants in gathering and analysing client requirements to understand how technology can be applied/solution to address specific business challenges. Help in preparing materials for client meetings and presentations, ensuring clear communication of project scopes and objectives.",
+        "Support in Data Engineering and Management: Assist in data engineering tasks, including data collection, cleaning, preprocessing, and management, under the guidance of experienced professionals. Learn and apply best practices in data management to support the preparation of datasets for AI model development.",
+        "Assistance in AI Model Development and Deployment: Support the design, training, and deployment of AI models, contributing to preliminary experiments and analysis under the supervision of senior team members. Participate in the evaluation and optimization of AI models, aiding in the identification of improvement areas to enhance performance.",
+        "Support with Automation and Process Optimization: Contribute to automation projects, including those utilizing RPA (Robotic Process Automation) and generative AI, to learn about streamlining business processes and reducing manual tasks. Gain experience in coding and configuring automation tools and scripts, focusing on automating repetitive tasks and operational procedures.",
+        "Collaborative Project Work: Engage in collaborative work with cross-functional teams, providing AI-related support and learning from the multidisciplinary approach to project execution. Participate in project meetings and discussions, offering assistance while gaining exposure to project management practices.",
+        "Innovation and Continuous Learning: Support innovation initiatives by assisting in research and the exploration of new AI technologies and methodologies. Stay informed about the latest AI trends and tools, contributing to the team's knowledge base.",
+        "This AI internship, centred around assisting senior consultants, offers a unique blend of learning opportunities and practical exposure to AI in the consulting realm. Interns will emerge from the program with a deep understanding of how AI technologies can be applied to drive business value, laying a solid foundation for a career in AI consulting."
+      ],
+      "requirements": [
+        "Final year students currently pursuing degrees in Computer Science/Data Science, Statistical Mathematics, Engineering, or related fields with a strong background in AI, data science and programming.",
+        "Proficiency in SQL and Python programming is required.",
+        "Exposure to any of the following would be advantageous: Graph Data Science (Neo4j, AWS Neptune), GenAI/LLM, Cloud Cognitive Services (Azure – Cognitive Services, AWS – Bedrock, Sagemaker, GCP – Vertex AI), Automation Tools (Intelligent Document Processing (IDP) (Laiye, UiPath, Abbyy) and Robotic Process Automation (RPA)), Logical First Data Approach (Denodo), Object-oriented programming (C++, Java), Full stack development.",
+        "Enthusiastic learners with strong analytical and problem-solving skills, good communication skills, and a customer service attitude.",
+        "Enjoy working in a team.",
+        "Able to commit to a six-month internship."
+      ],
+      "phone": "+65 91893035",
+      "url": "https://www.bioquestadvisory.com",
+      "expected_salary": "RM1030"
+},
+{
+      "job_id": "4",
+      "title": "Software Engineering Internship to Permanent",
+      "company": "BioQuest Advisory Sdn Bhd",
+      "location": "Kuala Lumpur",
+      "type": "Internship",
+      "posted_date": "2025-04-22 02:16:02",
+      "deadline": "2025-07-31",
+      "description": [
+        "Seeking a final-year Computer Science or Engineering student (any discipline with strong programming skills) for a minimum 6-month internship.",
+        "Work closely with senior consultants, gaining exposure to a variety of technology areas including GenAI, Retrieval Augmented Generation (RAG), Robotic Process Automation (RPA), system development, support, API development, and dashboarding.",
+        "Support in Client Engagements: Assist senior consultants in gathering and analyzing client requirements to understand how software solutions can address specific business challenges. Help in preparing materials for client meetings and presentations, ensuring clear communication of project scopes and objectives.",
+        "Software Development and Engineering Support: Contribute to the design and development of software applications, working on both frontend and backend tasks with technologies like Python, React.js, and JavaScript. Assist in developing secure and scalable APIs, integrating third-party services, and managing database interactions. Participate in system support tasks, helping to troubleshoot and optimize application performance.",
+        "Dashboarding and Data Visualization: Support the creation of dashboards and data visualization tools, enabling clients to better interpret data insights. Assist in integrating data sources and ensuring dashboards provide real-time, actionable insights.",
+        "Automation and Process Optimization: Contribute to automation projects, including those utilizing RPA (Robotic Process Automation), learning to streamline business processes and reduce manual tasks. Gain experience in configuring automation scripts, focusing on enhancing operational efficiency and minimizing repetitive tasks.",
+        "Collaborative Project Work: Engage in collaborative work with cross-functional teams, providing software engineering support and learning from a multidisciplinary approach to project execution. Participate in project meetings and discussions, gaining exposure to project management practices and contributing to shared objectives.",
+        "Innovation and Continuous Learning: Support innovation initiatives by assisting in research and the exploration of new software engineering technologies and methodologies. Stay informed about the latest trends in software development, contributing to the team's knowledge base.",
+        "This role is ideal for students eager to gain hands-on experience across various aspects of software engineering within a consulting environment, guided by seasoned professionals."
+      ],
+      "requirements": [
+        "Final year students currently pursuing degrees in Computer Science/Data Science, Statistical Mathematics, Engineering, or related fields with a strong background in AI, data science and programming.",
+        "Proficiency in SQL and Python programming is required.",
+        "Exposure to any of the following would be advantageous: Full stack development, Graph Data Science (Neo4j, AWS Neptune), GenAI/LLM, Cloud Cognitive Services (Azure – Cognitive Services, AWS – Bedrock, Sagemaker, GCP – Vertex AI), Automation Tools (Intelligent Document Processing (IDP) (Laiye, UiPath, Abbyy) and Robotic Process Automation (RPA)), Logical First Data Approach (Denodo), Object-oriented programming (C++, Java).",
+        "Enthusiastic learners with strong analytical and problem-solving skills, good communication skills, and a customer service attitude.",
+        "Enjoy working in a team.",
+        "Able to commit to a six-month internship."
+      ],
+      "phone": "+65 91893035",
+      "url": "https://www.bioquestadvisory.com",
+      "expected_salary": "RM1030"
+},
+{
+  "job_id": "5",
+  "title": "Internship - Software Trainee",
+  "company": "Solution Group Berhad",
+  "location": "Technology Park Malaysia, KL",
+  "type": "Internship",
+  "posted_date": "2025-03-03 11:32:13",
+  "deadline": "2025-06-30",
+  "description": [
+    "Assist Developer in project implementation and execution.",
+    "Assist in engineering component sourcing and procurement.",
+    "Assist in UI design and development of web applications.",
+    "Assist in backend software architecture design.",
+    "Requirements gathering and analysis to understand and document business needs.",
+    "Designing and prototyping software solutions.",
+    "Developing high-quality code alongside our seasoned team of developers.",
+    "Testing and debugging to ensure software functionality, data integrity and security.",
+    "Participating in development processes and post-deployment analysis.",
+    "Collaborating with team members across multiple departments to ensure project cohesiveness and effective integration.",
+    "Assist in office IT infrastructure.",
+    "Attend ad-hoc request."
+  ],
+  "requirements": [
+    "Bachelor’s Degree in Computer Science / Information Technology (IT) / Software Engineering (SE) or equivalent from reputable university."
+  ],
+  "phone": "03-27803890",
+  "url": "http://www.solutiongroup.com.my/",
+  "expected_salary": "RM800"
+},
+{
+  "job_id": "6",
+  "title": "Cyber Security Internship",
+  "company": "Across Verticals Sdn Bhd",
+  "location": "Petaling Jaya",
+  "type": "Internship",
+  "posted_date": "2024-09-19 15:31:35",
+  "deadline": "2025-12-31",
+  "description": [
+    "As a Penetration Tester Intern, you will assist the cybersecurity team in identifying vulnerabilities in systems, networks, and applications.",
+    "Gain hands-on experience working alongside experienced professionals, utilizing industry-standard tools, and learning best practices in ethical hacking and vulnerability assessment.",
+    "Assist in conducting penetration tests on web applications, networks, and other systems.",
+    "Participate in identifying and exploiting vulnerabilities in company systems.",
+    "Support the preparation of detailed reports documenting findings and recommendations.",
+    "Collaborate with the cybersecurity team to mitigate identified vulnerabilities.",
+    "Learn and use various penetration testing tools (e.g., Burp Suite, Nmap, Metasploit).",
+    "Stay updated on the latest cybersecurity threats and trends.",
+    "Assist in performing security assessments and audits as required."
+  ],
+  "requirements": [
+    "Currently pursuing a degree in Computer Science, Cybersecurity, Information Technology, or a related field.",
+    "Basic understanding of networking, web technologies, and operating systems (Windows/Linux).",
+    "Familiarity with security concepts such as OWASP Top 10, SQL Injection, XSS, and privilege escalation.",
+    "Knowledge of programming/scripting languages such as Python, Bash, or PowerShell is a plus.",
+    "Strong analytical and problem-solving skills.",
+    "Eagerness to learn and work in a fast-paced environment.",
+    "Ethical mindset and attention to detail."
+  ],
+  "phone": "+60127356529",
+  "url": "https://www.acrossverticals.com/",
+  "expected_salary": "1200"
+},
+{
+  "job_id": "7",
+  "title": "Internship - Web Designer",
+  "company": "zoewebs Sdn Bhd",
+  "location": "Prai, Penang",
+  "type": "Internship",
+  "posted_date": "2021-08-16 07:27:54",
+  "deadline": "2029-06-16",
+  "description": [
+    "Website design and development.",
+    "Digital marketing.",
+    "Provide support to customer."
+  ],
+  "requirements": [
+    "Familiar with CMS like: Wordpress, Joomla and able to customise the design and coding.",
+    "Knowledge in HTML/PHP/MYSQL/CSS/Java Script/ASP, Adobe Photoshop etc.",
+    "Good in English and graphic design will be added advantage."
+  ],
+  "phone": "012-3343029",
+  "url": "https://www.zoewebs.com/",
+  "expected_salary": "500"
+},
+{
+  "job_id": "8",
+  "title": "Internship for system support",
+  "company": "Extol Corporation Sdn Bhd",
+  "location": "1-40-1, Menara Bangkok bank, berjaya central park, no 105 jalan ampang, 50450 kuala lumpur",
+  "type": "Internship",
+  "posted_date": "2025-05-19 03:00:03",
+  "deadline": "2025-08-19",
+  "description": [
+    "Windows/Linux PC and Servers administration.",
+    "Networks and IT security monitoring.",
+    "Cloud server management."
+  ],
+  "requirements": [
+    "Minimum 3 months traineeship period and final year student is preferred.",
+    "Strong passion with minimum relevant technical skills in the respective positions above.",
+    "Fast learner especially in the IT field.",
+    "Strong analytic and problem solving skills.",
+    "Discipline, independent and show initiative.",
+    "Good Interpersonal skills with colleagues and supervisors.",
+    "All applicants must specify mention the following information in the application: Internship period date, Latest result."
+  ],
+  "phone": "03-2181 3666",
+  "url": "https://www.extolcorp.com/",
+  "expected_salary": "800"
+},
+{
+  "job_id": "9",
+  "title": "Remote Trading Support Engineer Intern",
+  "company": "Dynamic Technology Lab Pte. Ltd.",
+  "location": "Remote",
+  "type": "Internship",
+  "posted_date": "2025-01-15 03:24:13",
+  "deadline": "2025-12-31",
+  "description": [
+    "Manage DTL’s trading environment and ensure everything runs smoothly.",
+    "Configure, monitor, and optimize the firm’s trading with a focus on risk management and control.",
+    "Oversee core operational processes and participate in projects and initiatives that will help streamline critical workflows.",
+    "Gain extensive exposure to market access, trade monitoring, process optimization, system enhancement, alpha management and automation.",
+    "Monitor global trading activities and analyze and troubleshoot issues that may arise in the normal course of business in a timely and accurate manner.",
+    "Develop tools for trading analysis and trading procedure automations that helps monitor the live trading.",
+    "Work collaboratively with researchers and developers and be their first line of support for any queries.",
+    "Identify opportunities to automate and streamline legacy processes to enhance productivity and controls."
+  ],
+  "requirements": [
+    "Penultimate or final year student pursuing a degree in business analytics, computing, data science, quantitative finance or related fields.",
+    "Proficient in Python scripting.",
+    "Comfortable with Linux (from support/monitoring perspective).",
+    "Interest in the financial markets.",
+    "Strong business judgment and ability to identify and escalate issues.",
+    "Quick learner with excellent problem-solving skills.",
+    "Understanding of market data/order entry systems (bonus).",
+    "Understanding of the China onshore equities and derivatives markets (bonus)."
+  ],
+  "phone": "+65 69661762",
+  "url": "https://www.dytechlab.com/",
+  "expected_salary": "1300"
+},
+{
+  "job_id": "10",
+  "title": "Remote Data Engineer Intern",
+  "company": "Dynamic Technology Lab Pte. Ltd.",
+  "location": "Remote",
+  "type": "Internship",
+  "posted_date": "2025-01-15 03:21:52",
+  "deadline": "2025-12-31",
+  "description": [
+    "Coordinate with researchers to ensure efficient processing of large-scale data.",
+    "Develop and manage data pipeline.",
+    "Design a strong data framework.",
+    "Monitor and maintain data production on a daily basis."
+  ],
+  "requirements": [
+    "Penultimate or final year student pursuing a Bachelor's degree in computer science, business analytics, engineering or science-related fields.",
+    "Good in Python.",
+    "Comfortable with Linux.",
+    "Strong problem-solving skills and good understanding of data structure/algorithms.",
+    "Highly detail-oriented.",
+    "Ability to prioritize work and multi-task.",
+    "Ability to take responsibility and work well as a team member.",
+    "Knowledge of ETL (bonus).",
+    "C++ development experience (bonus).",
+    "Web development experience (bonus).",
+    "Experience with large data (>100G) (bonus).",
+    "Experience with cloud (bonus)."
+  ],
+  "phone": "+65 69661762",
+  "url": "https://www.dytechlab.com/",
+  "expected_salary": "1300"
+},
+{
+  "job_id": "11",
+  "title": "AI Robotics Simulation Intern",
+  "company": "Amaris.AI Pte Ltd",
+  "location": "Remote",
+  "type": "Internship",
+  "posted_date": "2024-11-25 03:13:09",
+  "deadline": "2025-07-31",
+  "description": [
+    "Develop a smart city digital twin focusing on enhancing robotics simulation through integrating AI technologies.",
+    "Specifically targeting agent workflows, spatial intelligence, and large language model (LLM) management."
+  ],
+  "requirements": [
+    "Model Development: Create and optimize AI agents for real-time problem-solving within urban environments. Develop algorithms that allow agents to adapt and respond to dynamic situations, ensuring efficient operation in complex urban settings.",
+    "Spatial Data Analysis: Utilize advanced spatial intelligence techniques to analyze urban data to improve decision-making processes. Interpret geographical information systems (GIS) data and apply machine learning methods to derive insights that can guide urban planning and management.",
+    "Simulation Frameworks: Implement robotics simulations that interact with the digital twin. Create virtual environments where various urban scenarios can be tested, allowing for the evaluation of robotic responses to real-world challenges.",
+    "LLM Management: Leverage large language models to facilitate natural language interactions with the digital twin. Develop interfaces that enable users to query the system effectively and manipulate urban data through conversational AI, enhancing user engagement and operational efficiency.",
+    "This internship offers hands-on experience with cutting-edge technologies in smart city development and AI applications, preparing interns for future roles in the rapidly evolving field of urban technology.",
+    "Programming Language Requirement: Python."
+  ],
+  "phone": "+65 9062 2580",
+  "url": "https://www.amaris.ai/",
+  "expected_salary": "RM1800"
+},
+{
+  "job_id": "12",
+  "title": "Applied AI Intern",
+  "company": "Amaris.AI Pte Ltd",
+  "location": "Remote",
+  "type": "Internship",
+  "posted_date": "2024-11-25 02:53:47",
+  "deadline": "2025-07-31",
+  "description": [
+    "The role is suitable for students that want to explore the AI industry and learn how AI is applied for practical commercial outcomes and be exposed to how AI can be fused with Cyber Security and/or IoT.",
+    "The student will be assisting Amaris.AI’s Data Scientist in applying the latest cutting-edge AI frameworks to solve industry problems.",
+    "Industry problems include the implementation of AI solutions for the automation of processes, cyber security applications, work-flow validation or for edge computing (IoT related applications).",
+    "Students should expect to be exposed to the application of computer vision/image AI frameworks, text-based (NLP) frameworks, graph neural networks or a combination of these frameworks to solve these industry problems.",
+    "Student job assignment will depend on the projects Amaris.AI has at the time of internship."
+  ],
+  "requirements": [
+    "Explore and research relevant topics based on assignment.",
+    "Test and improve the latest AI models/frameworks relevant to assignment.",
+    "Assist in doing a comparative analysis to current models.",
+    "Develop software components (backend and/or frontend) to allow the usage of the AI models/frameworks.",
+    "Write technical documentation.",
+    "Learn industry's practices and delivery methodology based on the software development life cycle with Agile or Waterfall-based development.",
+    "Learn Amaris.AI's development implementation of artificial intelligence model cycles.",
+    "Soft Skills: Practical project development experience, internal and external communication.",
+    "Technical Skills: Exposure to emerging AI technologies and its application for various use-cases.",
+    "Programming Language Requirement: Python."
+  ],
+  "phone": "+65 9062 2580",
+  "url": "https://www.amaris.ai/",
+  "expected_salary": "RM1800"
+},
+{
+  "job_id": "13",
+  "title": "Cyber Security Intern",
+  "company": "Across Verticals Sdn Bhd",
+  "location": "Petaling Jaya",
+  "type": "Internship",
+  "posted_date": "2024-03-12 04:45:19",
+  "deadline": "2026-12-31",
+  "description": [
+    "Seeking a motivated and enthusiastic Penetration Tester Intern to join our dynamic team.",
+    "This internship offers a unique opportunity to gain hands-on experience in penetration testing while working closely with senior consultants on various projects.",
+    "The ideal candidate will possess a strong interest in cybersecurity, coupled with a solid foundation in networking and web application development.",
+    "Assist senior consultants in conducting penetration tests across a variety of environments, including networks, applications, and systems.",
+    "Collaborate with team members to identify and exploit security vulnerabilities using industry-standard tools and techniques.",
+    "Gain practical experience in performing reconnaissance, scanning, enumeration, exploitation, and post-exploitation activities.",
+    "Contribute to the development of comprehensive penetration testing reports, including findings, recommendations, and remediation strategies.",
+    "Support in the documentation of testing methodologies, procedures, and best practices for knowledge sharing within the team."
+  ],
+  "requirements": [
+    "Enrolled in or recently graduated from a degree program in Computer Science, Information Technology, Cybersecurity, or related field.",
+    "Basic understanding of networking concepts, protocols, and technologies (TCP/IP, DNS, HTTP/HTTPS, etc.).",
+    "Familiarity with web application development technologies such as HTML, CSS, JavaScript, and server-side scripting languages (e.g., PHP, Python, Ruby).",
+    "Knowledge of common security vulnerabilities and attack vectors (e.g., OWASP Top 10, SQL injection, XSS, CSRF).",
+    "Strong analytical and problem-solving skills, with the ability to think creatively to overcome challenges.",
+    "Excellent communication skills, both verbal and written, with the ability to convey technical concepts effectively.",
+    "Self-motivated and eager to learn, with a proactive attitude towards professional development in cybersecurity."
+  ],
+  "phone": "+60127356529",
+  "url": "https://www.acrossverticals.com/",
+  "expected_salary": "RM1200"
+}
   ]
 }
