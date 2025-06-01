@@ -26,7 +26,7 @@ def process_resume(file, method, alpha):
     cleaned = clean_text(text)
 
     # Perform matching
-    matched_jobs = matcher.match(cleaned, top_k=5)
+    matched_jobs = matcher.match(cleaned, top_k=13)
 
     if matched_jobs.empty or matched_jobs['match_score'].max() < 0.1:
         return "<p><strong>No strong matches found.</strong></p>", highlighted_resume # Return empty results if no matches found
