@@ -4,24 +4,29 @@ from app.matcher import JobMatcher
 from app.utils import clean_text, highlight_matches, highlight_resume_text
 
 # Initialize the matcher (default: hybrid mode using BERT and TF-IDF)
-matcher = JobMatcher("data/job.json", use_bert=True, alpha=0.5)
+matcher = JobMatcher("data/job.json", method="hybrid")
 
-def process_resume(file, method, alpha):
+def process_resume(file, method_label, alpha):
     """
     Process the uploaded resume and return top job matches + highlighted resume.
-    - file: uploaded resume PDF
-    - method: selected matching method (TF-IDF, BERT, or Hybrid)
-    - alpha: weighting between TF-IDF and BERT (0=BERT only, 1=TF-IDF only)
     """
-    # Update matcher settings based on user input
-    matcher.use_bert = (method != "TF-IDF (Basic)")
-    matcher.alpha = alpha
+    # Map UI label to internal method
+    method_map = {
+        "TF-IDF (Basic)": "tfidf",
+        "Semantic (BERT)": "berth",
+        "Hybrid (TF-IDF + BERT)": "hybrid"
+    }
+    method = method_map.get(method_label, "hybrid")
+
+    # Update matcher settings
+    matcher.method = method
+    matcher.alpha = alpha if method == "hybrid" else 0.5  # Default alpha if not hybrid
 
     # Extract and clean resume text
     try:
         text = extract_text_from_pdf(file.name)
     except Exception as e:
-        return "<p><strong>Error reading PDF:</strong> {}</p>".format(str(e)), "" # Return error message if PDF extraction fails
+        return f"<p><strong>Error reading PDF:</strong> {str(e)}</p>", ""
 
     cleaned = clean_text(text)
 
@@ -29,7 +34,7 @@ def process_resume(file, method, alpha):
     matched_jobs = matcher.match(cleaned, top_k=5)
 
     if matched_jobs.empty or matched_jobs['match_score'].max() < 0.1:
-        return "<p><strong>No strong matches found.</strong></p>", highlighted_resume # Return empty results if no matches found
+        return "<p><strong>No strong matches found.</strong></p>", ""
 
     # Prepare tokens from job descriptions for highlighting resume
     job_tokens = set()
@@ -37,10 +42,7 @@ def process_resume(file, method, alpha):
         job_text = ' '.join(row['description'] + row['requirements'])
         job_tokens.update(clean_text(job_text).split())
 
-    # Prepare tokens from resume for highlighting job descriptions
     resume_tokens = set(cleaned.split())
-
-    # Highlight matched tokens in the resume
     highlighted_resume = highlight_resume_text(text, job_tokens)
 
     # Build HTML output for matched jobs
@@ -67,10 +69,9 @@ def process_resume(file, method, alpha):
         result += f"<strong>🔗 <a href='{row['url']}' target='_blank'>More Info</a></strong><br>"
         result += "<hr><br>"
 
-    # Return job results and highlighted resume
     return result, f"<h1>📄 Highlighted Resume</h1><div style='white-space: pre-wrap;'>{highlighted_resume}</div>"
 
-# Gradio UI with Blocks layout
+# Gradio UI
 with gr.Blocks() as demo:
     gr.Markdown("# 🎯 Text Similarity for Resume Job Matcher (UM Student Internship)")
     gr.Markdown("Upload your resume to find the best-matching internships based on TF-IDF and semantic similarity (BERT).")
@@ -87,7 +88,8 @@ with gr.Blocks() as demo:
 
             alpha = gr.Slider(
                 0.0, 1.0, value=0.5, step=0.1,
-                label="TF-IDF vs BERT Weight (0=BERT, 1=TF-IDF)"
+                label="TF-IDF vs BERT Weight (0=BERT, 1=TF-IDF)",
+                visible=True
             )
 
             with gr.Row():
@@ -99,9 +101,17 @@ with gr.Blocks() as demo:
         with gr.Column(scale=2):
             job_matches = gr.HTML(label="🔍 Top Matching Jobs")
 
-    # Define submit behavior
-    def wrapped_process_resume(file, method, alpha):
-        result, highlighted = process_resume(file, method, alpha)
+    def toggle_slider(method_label):
+        return gr.update(visible=(method_label == "Hybrid (TF-IDF + BERT)"))
+
+    method.change(
+        fn=toggle_slider,
+        inputs=method,
+        outputs=alpha
+    )
+
+    def wrapped_process_resume(file, method_label, alpha):
+        result, highlighted = process_resume(file, method_label, alpha)
         return highlighted, result
 
     submit_btn.click(
@@ -110,9 +120,7 @@ with gr.Blocks() as demo:
         outputs=[highlighted_resume, job_matches]
     )
 
-    # Clear all fields
     clear_btn.add([resume_file, method, alpha, highlighted_resume, job_matches])
 
-# Launch app
 if __name__ == "__main__":
     demo.launch(theme="default")
