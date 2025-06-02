@@ -69,7 +69,10 @@ def process_resume(file, method_label, alpha):
         result += f"<strong>🔗 <a href='{row['url']}' target='_blank'>More Info</a></strong><br>"
         result += "<hr><br>"
 
-    return result, f"<h1>📄 Highlighted Resume</h1><div style='white-space: pre-wrap;'>{highlighted_resume}</div>"
+    return (
+    f"<div style='max-height:1200px;overflow-y:auto'>{result}</div>",
+    f"<h1>📄 Highlighted Resume</h1><div style='white-space: pre-wrap;'>{highlighted_resume}</div>"
+)
 
 # Gradio UI
 with gr.Blocks() as demo:
