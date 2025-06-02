@@ -13,7 +13,7 @@ def process_resume(file, method_label, alpha):
     # Map UI label to internal method
     method_map = {
         "TF-IDF (Basic)": "tfidf",
-        "Semantic (BERT)": "berth",
+        "Semantic (BERT)": "bert",
         "Hybrid (TF-IDF + BERT)": "hybrid"
     }
     method = method_map.get(method_label, "hybrid")
