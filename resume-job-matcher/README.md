@@ -11,4 +11,5 @@ A Python NLP project that matches PDF resumes to suitable jobs using Gradio and 
 ## How to Run
 ```bash
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 python run.py
